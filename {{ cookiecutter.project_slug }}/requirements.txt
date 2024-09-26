@@ -1,0 +1,12 @@
+{% if cookiecutter.project_packages == "All" -%}
+fs
+jupyter
+jupyterlab
+pathlib
+pyprojroot
+{% endif -%}
+
+# Dependencias de pip deben listarse con su nombre de paquete:
+{% if cookiecutter.project_packages == "All" -%}
+pyhere
+{% endif %}

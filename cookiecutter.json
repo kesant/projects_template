@@ -1,8 +1,12 @@
 {
-    "project_title": "Cookiecutter Personal",
-    "project_slug": "{{ cookiecutter.project_title.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_description": "Proyecto de datascience.",
-    "project_author_name": "Tu nombre",
+    "project_name": "Machine learning project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_author_name": "Your name (or your organization/company/team)",
+    "project_author_email": "Yout email (or your organization/company/team)",
+    "project_description": "A short description of the project.",
+    "project_open_source_license": ["No license file", "MIT", "BSD-3-Clause"],
     "project_packages": ["All", "Minimal"],
-    "python_version": "3.11"
+    "python_version": "3.11",
+    "project_version": "0.1.0"
 }

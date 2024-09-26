@@ -20,4 +20,3 @@ dependencies:
     {% if cookiecutter.project_packages == "All" -%}
     - pyhere
     {% endif -%}
-
