@@ -22,7 +22,7 @@ conda install -c conda-forge cookiecutter
 In a folder where you want your project generated:
 
 ```bash
-cookiecutter https://gitlab.easymetering.com/artificial-intelligence/template_ia
+cookiecutter https://github.com/kesant/projects_template
 ```
 
 ## Resulting directory structure
