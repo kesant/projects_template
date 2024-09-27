@@ -7,6 +7,42 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 - [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html)
 - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html): This can be installed with pip by or conda depending on how you manage your Python packages:
 
+## Installing Miniconda
+### Windows
+
+These three commands quickly and quietly download the latest 64-bit Windows installer, rename it to a shorter file name, silently install, and then delete the installer:
+
+``` bash
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+start /wait "" .\miniconda.exe /S
+del miniconda.exe
+```
+After installing, open the Anaconda Prompt (miniconda3) program to use Miniconda3.
+
+### Linux
+
+These four commands download the latest 64-bit version of the Linux installer, rename it to a shorter file name, silently install, and then delete the installer:
+
+``` bash
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+```
+After installing, add the following line to your .bashrc to initialize conda automatically:
+
+``` bash
+export PATH=~/miniconda3/bin:$PATH
+```
+Then run:
+``` bash
+source ~/.bashrc
+```
+
+Now you can use Miniconda3 on your Linux system.
+
+## Installing Cookiecutter
+
 ``` bash
 pip install cookiecutter
 ```
@@ -22,8 +58,9 @@ conda install -c conda-forge cookiecutter
 In a folder where you want your project generated:
 
 ```bash
-cookiecutter https://github.com/kesant/projects_template
+cookiecutter https://gitlab.easymetering.com/artificial-intelligence/template_ia
 ```
+
 
 ## Resulting directory structure
 
